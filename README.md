@@ -15,43 +15,45 @@ We have added a test sequence from the UCF-Sports dataset in the dataloaders fol
 1. Run `python test_sequence.py`.
 
 ### Inference
-1. The model given is for UCF-Sports. It can be found in models folder.
-2. Download the datasets and place them under dataloaders. They can be downloaded from https://github.com/wenguanwang/DHF1K.
+1. We have provided the model inside this zip file.
+2. The model given is for UCF-Sports. It can be found in models folder.
+1. Download the datasets and place them under dataloaders. They can be downloaded from https://github.com/wenguanwang/DHF1K.
 The dataset directory should look like the following:
-root
+```bash
 └── dataloaders
-    ├── ucf
-    │   ├── training
-    │   │   └── sequence_name
-    │   │       ├── images
-    │   │       ├── fixation
-    │   │       └── maps
-    │   └── testing
-    │       └── sequence_name
-    │           ├── images
-    │           ├── fixation
-    │           └── maps
-    ├── hollywood
-    │   ├── training
-    │   │   └── sequence_name
-    │   │       ├── images
-    │   │       ├── fixation
-    │   │       └── maps
-    │   └── testing
-    │       └── sequence_name
-    │           ├── images
-    │           ├── fixation
-    │           └── maps
-    └── dhf1k
-        ├── training
-        │   └── sequence_name
-        │       ├── images
-        │       ├── fixation
-        │       └── maps
-        └── testing
-            └── sequence_name
-                ├── images
-                ├── fixation
-                └── maps
+│   ├── ucf
+│   │   ├── training
+│   │   	└── sequence_name
+│   │   		├── images
+│   │   		├── fixation
+│   │   		└── maps
+│   │   └── testing
+│   │   	└── sequence_name
+│   │   		├── images
+│   │   		├── fixation
+│   │   		└── maps
+│   ├── hollywood
+│   │   ├── training
+│   │   	└── sequence_name
+│   │   		├── images
+│   │   		├── fixation
+│   │   		└── maps
+│   │   └── testing
+│   │   	└── sequence_name
+│   │   		├── images
+│   │   		├── fixation
+│   │   		└── maps
+│   └── dhf1k
+│   │   ├── training
+│   │   	└── sequence_name
+│   │   		├── images
+│   │   		├── fixation
+│   │   		└── maps
+│   │   └── testing
+│   │   	└── sequence_name
+│   │   		├── images
+│   │   		├── fixation
+│   │   		└── maps
+```
 2. For DHF1K, please put the validation set files in the testing directory (the directory is named testing to streamline code).
 3. Run `python inference_with_metrics.py`.
